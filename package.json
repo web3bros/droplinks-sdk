@@ -1,6 +1,6 @@
 {
   "name": "@droplinks/sdk",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "description": "SDK for creating shareable digital asset links on solana via droplinks.io",
   "main": "dist/index.js",
   "scripts": {
