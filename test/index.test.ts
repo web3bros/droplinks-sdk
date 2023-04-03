@@ -1,4 +1,4 @@
-import {DropLinks,DropLink, DropLinkClaim, DropLinksSearchOptions, NewDropLinkOptions} from "../src";
+import {DropLinks, DropLink, DropLinkClaim, DropLinksSearchOptions, NewDropLinkOptions} from "../src";
 
 // this is a test public API KEY for droplinks.io
 const DROP_LINKS_API_KEY = "a84bb5eb72cb46008a73f78e6b922084"

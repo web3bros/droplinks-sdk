@@ -30,7 +30,7 @@ Create a new droplink
 
 ```jsx
 DropLinks.create().then((dropLink: DropLink) => {
-   // your code here to transfer assets to droplink.publicAddress
+  const {id, claimCode, publicAddress, locked, claimLink, campaignId, claimed} = dropLink
 });
 ```
 
@@ -39,16 +39,7 @@ Get all your droplinks
 ```jsx
 DropLinks.getDropLinks({claimed: true} as DropLinksSearchOptions).then((dropLinks: DropLink[]) => {
   dropLinks.forEach((dropLinks: DropLink) => {
-		// each droplink has the following type
-    // {
-    //   id: number
-    //   claimCode: string,
-    //   publicAddress: string
-    //   locked: boolean
-    //   claimLink: string
-    //   campaignId: number | null
-    //   claimed: boolean
-    // }
+    const {id, claimCode, publicAddress, locked, claimLink, campaignId, claimed} = dropLink
   })
 });
 ```
@@ -58,15 +49,7 @@ Get all the claims of your droplinks
 ```jsx
 DropLinks.getClaims().then((claims: DropLinkClaim[]) => {
   claims.forEach((claim: DropLinkClaim) => {
-    // each claim has the following type
-    // {
-    //   id: number
-    //   claimedAt: string
-    //   claimedByAccount: string
-    //   dropLinkId: number
-    //   claimLink: string
-    //   extraClaimerInfo?: ExtraClaimerInfo
-    // }
+    const {id, claimedAt, claimedByAccount, dropLinkId, claimLink, extraClaimerInfo} = claim
   })
 });
 ```
