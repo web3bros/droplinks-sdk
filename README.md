@@ -2,7 +2,7 @@
 
 [Droplinks.io](http://droplinks.io) is the easiest way to distribute your NFTs and tokens with claim links & QR codes.
 
-Each link(droplink) is a wallet that you have access to it's private key. With the droplinks.io SDK you can
+Each link(droplink) is a wallet that you have access to its private key. With the droplinks.io SDK you can
 
 * Create new droplinks and get their public address
 * Get all the droplinks that you created
